@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.music-player:hover {
+    transform: scale(1.05);
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.cover img:hover {
+    transform: scale(1.05);
+}
+
+.track-info h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.track-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.control-btn:hover {
+    color: #ff4757;
+}
+
+.play-pause-btn {
+    background: #ff4757;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 71, 87, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.play-pause-btn:hover {
+    background: #e84118;
+    box-shadow: 0 15px 30px rgba(255, 71, 87, 0.8);
+}
+
+.progress-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    appearance: none;
+    background: #555;
+    border-radius: 5px;
+    height: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ff4757;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume-slider {
+    margin: 0 10px;
+    width: 80%;
+    appearance: none;
+    background: #555;
+    border-radius: 5px;
+    height: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ff4757;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-container i {
+    color: #fff;
+    font-size: 18px;
+}
